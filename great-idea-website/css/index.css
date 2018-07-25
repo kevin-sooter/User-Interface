@@ -3,277 +3,186 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-
-* {
-  display: inline-block;
-  position: relative;
-}
-
-title {
-  display: none;
-}
-
-.nav {
-  display: inline-block;
+.container {
   width: 1000px;
+  /* TB LR */
+  margin: 0 auto;
 }
 
-.nav li {
-  text-align: center;
+/* header */
+
+header nav {
   display: inline-block;
-  cursor: pointer;
-  font-size: 15px;
-  margin: 10px;
-  padding: 10px;
-  left: 250px;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
 }
 
-nav li:last-child {
+header nav a {
+  display: inline-block;
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
   margin-right: 0;
 }
 
 header .logo {
   display: inline-block;
-  cursor: pointer;
   margin-top: 25px;
 }
 
-.second-logo {
-  cursor: pointer;
-  left: 800px;
-  bottom: 400px;
-}
+/* cta */
 
-h1 {
-  font-size: 50px;
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
   text-align: center;
-  margin: 100px;
-  padding: 20px;
-  top: 15px;
-  left: 300px;
+  padding: 0px 90px;
 }
 
-button {
-  margin: 150px;
-  padding: 10px;
-  font-size: 20px;
-  margin: 0;
-  left: 460px;
-  bottom: 40px;
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-h2 {
-  bottom: 300px;
-  left: 300px;
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
 }
 
-p {
-  text-align: left;
-  right: 50px;
-  bottom: 200px;
-  padding: 10px;
-  left: 50px;
+.cta img {
+  margin-top: 69px;
 }
 
-.middle-img {
-  bottom: 100px;
-  left: 200px;
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
 }
 
-h3 {
-  right: 600px;
+.main-content .top-content {
+  padding: 0 10px;
 }
 
-h4 {
-  bottom: 221px;
-  left: 725px;
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
-h5 {
-  left: 750px;
-  bottom: 220px;
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.one {
-  top: 220px;
+.main-content .middle-img {
+  margin-top: 45px;
 }
 
-.two {
-  top: 1px;
-  left: 150px;
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
 }
 
-.three {
-  top: 5px;
-  left: 225px;
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
 }
 
-h6 {
-  font-size: 15px;
-  font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  left: 200px;
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
 }
 
-address {
-  top: 40px;
-  left: 145px;
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
 }
 
-.footer {
-  left: 0;
-  top: 85px;
+.contact p {
+  margin: 20px 0;
 }
 
-.copyright {
-  left: 200px;
-  top: 200px;
-}
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
