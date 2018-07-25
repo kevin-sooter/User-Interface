@@ -232,12 +232,13 @@ h3 {
 }
 
 h4 {
-  right: 550px;
+  bottom: 221px;
+  left: 725px;
 }
 
 h5 {
-  left: 825px;
-  bottom: 215px;
+  left: 750px;
+  bottom: 220px;
 }
 
 .one {
@@ -252,4 +253,27 @@ h5 {
 .three {
   top: 5px;
   left: 225px;
+}
+
+h6 {
+  font-size: 15px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  left: 200px;
+}
+
+address {
+  top: 40px;
+  left: 145px;
+}
+
+.footer {
+  left: 0;
+  top: 85px;
+}
+
+.copyright {
+  left: 200px;
+  top: 200px;
 }
